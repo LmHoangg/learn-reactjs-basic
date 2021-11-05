@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "./components/DemoUseContext/ThemeContext";
+import { StoreProvider } from "./components/store";
 function emitComment(id) {
   setInterval(() => {
     window.dispatchEvent(
@@ -20,9 +21,11 @@ emitComment(3);
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
+    <StoreProvider>
+     <ThemeProvider>
       <App />
     </ThemeProvider>
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
