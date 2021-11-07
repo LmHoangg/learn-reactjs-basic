@@ -1,0 +1,36 @@
+.box {
+  margin: 4px;
+  width: calc(50% - 23px);
+  min-width: 397px;
+  max-height: 380px;
+
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 12px 6px;
+  text-align: center;
+}
+
+.boxApi {
+  margin: 4px;
+  min-width: 397px;
+  max-height: 380px;
+  width: calc(50% - 20px);
+  
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 12px 6px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.boxApi img {
+  border-radius: 20px;
+  width: 90%;
+}
+
+.box button {
+  width: 80px;
+  min-height: 30px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
